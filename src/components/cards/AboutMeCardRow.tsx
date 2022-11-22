@@ -3,20 +3,27 @@ import styled from "styled-components";
 import { themes } from "../../styles/ColorStyles";
 import { MediumText } from "../../styles/TextStyles";
 
-interface AboutMeCardRowProps {
+interface AboutMeCardRowProps {   
   title: string;
   value: string | number;
 }
 
 const AboutMeCardRow = (props: AboutMeCardRowProps) => {
 
-    const formatDate = (value: string | number): string => {
-      if(typeof value === "number") {
-        let date = new Date(value);
-        return date.toLocaleDateString();
-      } else {
-        return value;
-      }
+  const formatDate = (value: string | number): string => {
+    if(typeof value === "number") {
+      let date = new Date(value);
+      return date.toLocaleDateString();
+    } else {
+      return value;
+    }
+  }
+
+  const githubLink =  (title: string) => {
+    if(title.startsWith('http')) {
+      //let link = window.open(title)
+      return title
+    }
   }
 
   return (
@@ -24,11 +31,15 @@ const AboutMeCardRow = (props: AboutMeCardRowProps) => {
       <InfoKey>{props.title}</InfoKey>
       <InfoValueWrapper>
           <InfoValue>{
-          formatDate(props.value)
+            formatDate(props.value)            
           }</InfoValue>
+          <LinkValue href={githubLink(props.title)} target="_blank" rel="noopener" >{
+            githubLink(props.title)
+          }</LinkValue>
+
       </InfoValueWrapper>
     </InfoDetailBox>
-  );
+  ); 
 };
 
 const InfoDetailBox = styled.div`
@@ -58,6 +69,10 @@ const InfoValue = styled(MediumText)`
   @media (prefers-color-scheme: dark) {
     color: ${themes.dark.text1};
   }
+`;
+
+const LinkValue = styled.a`
+    
 `;
 
 export default AboutMeCardRow

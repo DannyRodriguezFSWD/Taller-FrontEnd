@@ -44,10 +44,12 @@ const AboutMeCard = (props: AboutMeCardProps) => {
               value={props.aboutMe.job}
             />
           )}
-          {props.aboutMe.github && (
+          {props.aboutMe.github && (             
             <AboutMeCardRow
+             // href={t("aboutMeCard.github")}
+             //href={props.aboutMe.github}            
               title={t("aboutMeCard.github")}
-              value={props.aboutMe.github}
+              value={props.aboutMe.github}              
             />
           )}
         </InfoSection>

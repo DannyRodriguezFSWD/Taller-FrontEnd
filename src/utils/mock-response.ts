@@ -4,10 +4,10 @@ import { Project } from "../model/project";
 
 export const mockLogin = (userName: string, password: string) => new Promise<TokenResponse>(function (resolve, rejected) {
     setTimeout(() => {
-        if (userName === "user@threepoints.com" && password === "patata") {
+        if (userName === "dan@threepoints.com" && password === "Thrpnts") {
             resolve(JSON.parse(
                 `{
-                 "token" : "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjgyOTM0ODIwOTM0ODkwODA5OCIsImVtYWlsIjoibHVjYXNmZXJuYW5kZXphcmFnb25AZ21haWwuY29tIiwiaWF0IjoxNjM2OTIzOTE4LCJleHAiOjE2MzY5Mjc1MTh9.3qHpT-ZKj04-QzkissGbuyCHFkgN_WXy8LkuXcrUUSw"
+                 "token" : "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiZGFuQHRocmVlcG9pbnRzLmNvbSIsInBhc3N3b3JkIjoiVGhycG50cyIsImlhdCI6MTUxNjIzOTAyMn0.z57CrWsGJGzRNBud1luhSjrtTIUT6DYOL5H5-cDqifE"
                  }`
             ));
         } else {
@@ -31,11 +31,11 @@ export const mockAboutme = () => new Promise<AboutMe>(function (resolve, rejecte
         resolve(JSON.parse(
             `{
             "id":"12389asdfasf8",
-            "name":"Lucas Fernández Aragón",
-            "birthday":765817712000,
-            "nationality":"Spain",
-            "job":"Red Hat",
-            "github":"https://github.com/lucferbux"
+            "name":"Danny A Rodríguez Rodríguez",
+            "birthday":462024000000,
+            "nationality":"Costa Rica",
+            "job":"Front End Developer - ACN",
+            "github":"https://github.com/DannyRodriguezFSWD"
             }`
         ));
     }, 500);
@@ -48,12 +48,12 @@ export const mockProjects = () => new Promise<Project[]>(function (resolve, reje
             `[
                 {
                 "id":"12349as8df90",
-                "title":"React",
-                "description":"React es el Framework web basado en componentes de Facebook. Cuenta con una curva de aprendizaje corta y mucha flexibilidad",
-                "version":"17.0.1",
-                "link":"https://reactjs.org/docs/hello-world.html",
-                "tag":"JavaScript, Typescript, React",
-                "timestamp":"765817712000"
+                "title":"MyGP-Actividad-1",
+                "description":"Gestión de proyectos y gitflow",
+                "version":"1.0.16",
+                "link":"https://github.com/DannyRodriguezFSWD/MyGP-Actividad-1",
+                "tag":"JavaScript, HTML, CSS",
+                "timestamp":"1657260000"
                 },
                 {
                 "id":"789asdfas89",

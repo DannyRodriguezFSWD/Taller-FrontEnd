@@ -4,10 +4,10 @@
         "description": "Personal Portfolio Webpage"
     },
     "app": {
-        "title": "Welcome to my Portfolio Webpage"
+        "title": "Portfolio Webpage"
     },
     "landing": {
-        "title": "Welcome to my Portfolio"
+        "title": "Danny Rodriguez, my Portfolio"
     },
     "loader" : {
         "text": "loading..."

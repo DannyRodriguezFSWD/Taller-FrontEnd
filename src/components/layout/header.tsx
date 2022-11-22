@@ -18,7 +18,7 @@ export const menuData = [
     title: "nav.admin",
     link: "/admin",
   },
-];
+ ];
 
 const Header = () => {
   const { t } = useTranslation();

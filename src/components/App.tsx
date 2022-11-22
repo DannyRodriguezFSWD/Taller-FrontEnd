@@ -31,7 +31,7 @@ const App = () => {
           </Route>
           <PrivateRoute path="/admin">
             <Admin />
-          </PrivateRoute>
+          </PrivateRoute>         
           <Redirect from="*" to="/" />
         </Switch>
         <Loader/>

@@ -1,13 +1,13 @@
 {
     "meta": {
-        "title": "Portfolio",
+        "title": "Web Portfolio",
         "description": "Personal Portfolio Webpage"
     },
     "app": {
-        "title": "Bienvenid@s a mi Web Portfolio"
+        "title": "Web Portfolio"
     },
     "landing": {
-        "title": "Bienvenido a mi Portfolio"
+        "title": "Danny Rodriguez Portfolio"
     },
     "loader" : {
         "text": "cargando..."
